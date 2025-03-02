@@ -2,7 +2,6 @@
 # conda activate telegram_bot
 # streamlit run Prospecta.py --server.maxUploadSize 2
 
-import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
 import numpy as np
