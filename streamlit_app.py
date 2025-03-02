@@ -7,9 +7,10 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 
+st.logo("logo.png", size="large")
 st.set_page_config(layout="wide")
+st.sidebar.title("Wellcome to PROSPECTA")
 
-st.sidebar.title("Wellcome to PROSPECTA!")
 col1, col2, col3 = st.columns([0.25, 0.25, 0.5])
 
 uploaded_file = st.sidebar.file_uploader("Choose a file (NIR file)", type="csv")
@@ -20,8 +21,6 @@ if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     NIR_list = df.columns.to_list()
     option = st.sidebar.selectbox("Select the NIR source", [None] + NIR_list)
-    # st.write("You selected:", option)    
-
 
 with col1:
     st.header("Data sensor")
@@ -44,15 +43,4 @@ with col3:
     with st.container():
         if uploaded_file is not None:
             if option in NIR_list:
-                fig, ax = plt.subplots()
-                df.plot(kind='line', y=option, ax=ax, figsize=(8, 3), grid=True)
-                plt.title('NIR Spectrum')
-                plt.xlabel('Wavelength')
-                plt.ylabel(option)
-                plt.grid()
-
-                st.write(fig)
-
-
-    
-
+                st.line_chart(df, y=option, x_label="Wavelength")
