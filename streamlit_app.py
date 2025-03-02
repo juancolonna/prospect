@@ -8,7 +8,7 @@ import numpy as np
 
 st.logo("logo.png", size="large")
 st.set_page_config(layout="wide")
-st.sidebar.title("Wellcome to PROSPECTA")
+st.sidebar.title("Wellcome to PROSPECT")
 
 col1, col2, col3 = st.columns([0.25, 0.25, 0.5])
 
