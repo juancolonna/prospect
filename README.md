@@ -1,3 +1,3 @@
 # Prospecta: the food safety startup
 
-![logo.png](https://github.com/juancolonna/prospecta/blob/main/logo.png){width=30 height=20}
+![logo.png (10)](https://github.com/juancolonna/prospecta/blob/main/logo.png)
