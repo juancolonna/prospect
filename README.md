@@ -1,3 +1,3 @@
-# Prospecta
+# Prospecta: the food safety startup
 
-![Perspecta: the food safety startup](logo.png)
+![](logo.png | width=100)
