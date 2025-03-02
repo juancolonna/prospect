@@ -22,7 +22,7 @@ if uploaded_file is not None:
     option = st.sidebar.selectbox("Select the NIR source", [None] + NIR_list)
 
 with col1:
-    st.header("Data sensor")
+    st.header("Sensor readings")
     if uploaded_file is not None:
         st.write(df)
 
