@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 
-st.logo("logo.png", size="large")
+st.logo("logo_2.png", size="large")
 st.set_page_config(layout="wide")
 st.sidebar.title("Wellcome to PROSPECT")
 
